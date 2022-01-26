@@ -1,0 +1,416 @@
+// 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+    color: #fff;
+}
+
+// Section 1
+// Header
+//
+header {
+    background: url('./assets/background.jpg');
+    background-size: cover;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+// nav bar
+.header-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 57px 0 23px;
+
+    font-family: 'Source Sans Pro';
+    font-size: 19px;
+}
+
+// banner
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 1072px;
+    margin: 0 auto;
+    background: url('./assets/background-human.png') no-repeat center bottom;
+}
+
+// platforms
+.platforms {
+    display: flex;
+    justify-content: space-between;
+    width: 1065px;
+    padding: 107px 0 0 0;
+}
+
+.platform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    font-weight: 700;
+
+    span {
+        padding: 5px 0 0 0
+    }
+}
+
+// h1
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -15px 0 0 0;
+
+    .choose {
+        font-family: 'Open Sans';
+        font-size: 56px;
+        font-weight: 700;
+        letter-spacing: 0.845em;
+    }
+
+    .flutter {
+        font-family: 'Fira Sans';
+        font-size: 128px;
+        font-weight: 800;
+        margin: -33px 0 -30px;
+    }
+
+    .both {
+        font-family: 'Open Sans';
+        font-size: 36px;
+        font-weight: 800;
+        letter-spacing: 0.37em;
+    }
+}
+
+// button
+button:hover {
+    cursor: pointer;
+    background: #dcdcdc;
+}
+
+.btn-large {
+    width: 186px;
+    height: 66px;
+    margin: 63px auto 72px;
+    border: none;
+
+    background: #fff;
+    color: #4a4a4a;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    font-weight: 800;
+}
+
+// Section 2
+// Workshop
+//
+.section {
+    padding: 53px 0 79px;
+}
+
+.workshop {
+    display: flex;
+    flex-direction: column;
+
+    color: #4a4a4a;
+}
+
+// head
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+        margin: 0 25px 0 0;
+    }
+
+    .workshop & {
+        margin: 0 0 101px 0;
+    }
+}
+
+h2 {
+    font-family: 'Fira Sans';
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 6px;
+    font-weight: 500;
+
+    .workshop & {
+        font-weight: 400;
+    }
+}
+
+.head-btn {
+    width: 146px;
+    height: 46px;
+
+    color: inherit;
+    font-size: 14px;
+    font-weight: 800;
+
+    border: 1px solid #4a4a4a;
+    background: #fff;
+}
+
+// text
+.text {
+    width: 700px;
+    font-size: 19px;
+
+    .workshop & {
+        height: 203px;
+        margin: 0 auto 65px;
+    }    
+}
+
+// cards
+.workshop-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 341px;
+    }
+
+    img {
+        height: 145px;
+    }
+
+    .title {
+        font-family: 'Fira Sans';
+        font-size: 24px;
+        font-weight: 800;
+        color: #ff7e03;
+        margin: 10px 0 23px 0;
+    }
+
+    .description {
+        height: 101px;
+        font-size: 17px;
+    }
+}
+
+// Section 3
+// When and where
+//
+// head
+.when-and-where {
+    background: #353535;
+
+    .head {
+        margin: 0 0 80px 0;
+    }
+
+    .head-btn {
+        border: 1px solid #fff;
+        background: #353535;
+
+        &:hover {
+            background: #696969;
+        }
+    }
+}
+
+// info
+.when-and-where .info {
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 1px solid #fff;
+    padding: 18px 48px 21px;
+}
+
+.when-and-where .info-card {
+    display: flex;
+    flex-direction: column;
+    width: 541px;
+    height: 252px;
+    padding: 0 21px 0;
+
+    .title {
+        height: 58px;
+        font-family: 'Fira Sans';
+        font-size: 48px;
+        font-weight: 800;
+        margin: 0 0 32px 0;
+    }
+
+    .small-text {
+        font-family: 'Fira Sans';
+        font-size: 17px;
+    }
+
+    .middle-text {
+        font-family: 'Fira Sans';
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .space-text {
+        font-family: 'Source Sans Pro';
+        font-size: 32px;
+        letter-spacing: 17.7778px;
+        
+        margin: 0 0 -20px 0;
+    }
+
+    .large-text {
+        font-family: 'Source Sans Pro';
+        font-size: 96px;
+        font-weight: 700;
+    }
+}
+
+
+// Section 4
+// Who
+//
+.who {
+    color: #353535;
+}
+
+.who .head {
+    margin: 0 0 56px 0;
+
+    span {
+        width: 146px;
+        text-align: right;
+    }
+}
+
+.who .btn-large {
+    margin: 0 auto;
+    background: #ff7e03;
+    color: #fff;
+
+    &:hover {
+        background: #ffa500;
+    }
+}
+
+// Section 5
+// Get ready
+//
+.get-ready {
+    background: url('./assets/background.jpg');
+    background-size: cover;
+
+    .text {
+        height: 125px;
+        margin: 120px auto 54px;
+    }
+}
+
+// ol
+ol {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 113px 0;
+
+    span {
+        font-size: 19px;
+    }
+}
+
+li {
+    font-family: 'Fira Sans';
+    font-size: 32px;
+    font-weight: 500;
+    text-align: left;
+}
+a {
+    font-size: 19px;
+    color: #fff;
+}
+
+.get-ready .btn-large {
+    margin: 0 auto;
+}
+
+// Section 6
+// Organizers
+//
+.organizers {
+    color: #4a4a4a;
+
+    .text {
+        width: 940px;
+        height: 240px;
+        margin: 101px auto 107px;
+    }
+
+    .btn-large {
+        width: 206px;
+        height: 46px;
+        margin: 0;
+        font-size: 14px;
+        background: #ff7e03;
+        color: #fff;
+
+        &:hover {
+            background: #ffa500;
+        }
+    }
+}
+
+.organizers .contacts {
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+        margin: 0 24px 0 0;
+    }
+}
+
+.organizers .social-media {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+// Section 7
+// Footer
+//
+footer {
+    padding: 48px 0 61px;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .name {
+        font-size: 15px;
+        color: #000;
+    }
+
+    .email {
+        font-size: 20px;
+        color: #ff7e03;
+    }
+}
