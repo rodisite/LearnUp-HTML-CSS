@@ -1,33 +1,433 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#block1 {
-    background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5));
-    color: #ffffff;
+body {
+  font-family: "Source Sans Pro";
+  color: #fff;
 }
 
-#block1 h1 {
-    font-family: 'Open Sans';
-    font-weight: 800;
-    font-size: 56px;
-    text-align: center;
-    text-transform: uppercase;
+header {
+  background: url("./assets/background.jpg");
+  background-size: cover;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 57px 0 23px;
+  font-family: "Source Sans Pro";
+  font-size: 19px;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1072px;
+  margin: 0 auto;
+  background: url("./assets/background-human.png") no-repeat center bottom;
+}
+
+.platforms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1065px;
+  padding: 107px 0 0 0;
+}
+
+.platform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Source Sans Pro";
+  font-size: 24px;
+  font-weight: 700;
+}
+.platform span {
+  padding: 5px 0 0 0;
+}
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -15px 0 0 0;
+}
+h1 .choose {
+  font-family: "Open Sans";
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 0.845em;
+}
+h1 .flutter {
+  font-family: "Fira Sans";
+  font-size: 128px;
+  font-weight: 800;
+  margin: -33px 0 -30px;
+}
+h1 .both {
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0.37em;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #dcdcdc;
+}
+
+.btn-large {
+  width: 186px;
+  height: 66px;
+  margin: 63px auto 72px;
+  border: none;
+  background: #fff;
+  color: #4a4a4a;
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.section {
+  padding: 53px 0 79px;
+}
+
+.workshop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #4a4a4a;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.head svg {
+  margin: 0 25px 0 0;
+}
+.workshop .head {
+  margin: 0 0 101px 0;
 }
 
 h2 {
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 36px;
-    text-transform: uppercase;
+  font-family: "Fira Sans";
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 6px;
+  font-weight: 500;
+}
+.workshop h2 {
+  font-weight: 400;
 }
 
-#block2 h2, #block4 h2, #block6 h2 {
-    color: #000000;
+.head-btn {
+  width: 146px;
+  height: 46px;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  border: 1px solid #4a4a4a;
+  background: #fff;
 }
 
-#block3 h2, #block5 h2 {
-    color: #ffffff
+.text {
+  width: 700px;
+  font-size: 19px;
+}
+.workshop .text {
+  height: 203px;
+  margin: 0 auto 65px;
+}
+
+.workshop-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.workshop-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 341px;
+}
+.workshop-cards img {
+  height: 145px;
+}
+.workshop-cards .title {
+  font-family: "Fira Sans";
+  font-size: 24px;
+  font-weight: 800;
+  color: #ff7e03;
+  margin: 10px 0 23px 0;
+}
+.workshop-cards .description {
+  height: 101px;
+  font-size: 17px;
+}
+
+.when-and-where {
+  background: #353535;
+}
+.when-and-where .head {
+  margin: 0 0 80px 0;
+}
+.when-and-where .head-btn {
+  border: 1px solid #fff;
+  background: #353535;
+}
+.when-and-where .head-btn:hover {
+  background: #696969;
+}
+
+.when-and-where .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #fff;
+  padding: 18px 48px 21px;
+}
+
+.when-and-where .info-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 541px;
+  height: 252px;
+  padding: 0 21px 0;
+}
+.when-and-where .info-card .title {
+  height: 58px;
+  font-family: "Fira Sans";
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0 0 32px 0;
+}
+.when-and-where .info-card .small-text {
+  font-family: "Fira Sans";
+  font-size: 17px;
+}
+.when-and-where .info-card .middle-text {
+  font-family: "Fira Sans";
+  font-size: 36px;
+  font-weight: 700;
+}
+.when-and-where .info-card .space-text {
+  font-family: "Source Sans Pro";
+  font-size: 32px;
+  letter-spacing: 17.7778px;
+  margin: 0 0 -20px 0;
+}
+.when-and-where .info-card .large-text {
+  font-family: "Source Sans Pro";
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.who {
+  color: #353535;
+}
+
+.who .head {
+  margin: 0 0 56px 0;
+}
+.who .head span {
+  width: 146px;
+  text-align: right;
+}
+
+.who .btn-large {
+  margin: 0 auto;
+  background: #ff7e03;
+  color: #fff;
+}
+.who .btn-large:hover {
+  background: #ffa500;
+}
+
+.get-ready {
+  background: url("./assets/background.jpg");
+  background-size: cover;
+}
+.get-ready .text {
+  height: 125px;
+  margin: 120px auto 54px;
+}
+
+ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 113px 0;
+}
+ol span {
+  font-size: 19px;
+}
+
+li {
+  font-family: "Fira Sans";
+  font-size: 32px;
+  font-weight: 500;
+  text-align: left;
+}
+
+a {
+  font-size: 19px;
+  color: #fff;
+}
+
+.get-ready .btn-large {
+  margin: 0 auto;
+}
+
+.organizers {
+  color: #4a4a4a;
+}
+.organizers .text {
+  width: 940px;
+  height: 240px;
+  margin: 101px auto 107px;
+}
+.organizers .btn-large {
+  width: 206px;
+  height: 46px;
+  margin: 0;
+  font-size: 14px;
+  background: #ff7e03;
+  color: #fff;
+}
+.organizers .btn-large:hover {
+  background: #ffa500;
+}
+
+.organizers .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.organizers .contacts svg {
+  margin: 0 24px 0 0;
+}
+
+.organizers .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+}
+
+footer {
+  padding: 48px 0 61px;
+}
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .name {
+  font-size: 15px;
+  color: #000;
+}
+footer .email {
+  font-size: 20px;
+  color: #ff7e03;
 }
